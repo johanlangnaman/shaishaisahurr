@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050609">
+  <title>Flowers, Made of Code</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js"}}
+  </script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <main class="experience">
+    <header class="headline"><p class="kicker">HAPPY 1ST MONTHSARY, MY LOVE</p><h1>Who needs roses<br>when you can code them?</h1><p class="hint">Drag to turn your bouquet · let it bloom</p></header>
+    <section class="stage" aria-label="Interactive 3D flower bouquet">
+      <div id="loading" class="loading">Growing your bouquet<span>…</span></div>
+      <div id="error" class="error" hidden>Could not load the 3D scene. Check your connection and reload.</div>
+      <div class="stage-glow" aria-hidden="true"></div>
+      <div id="canvas-host"></div>
+      <div class="ground-glow" aria-hidden="true"></div>
+    </section>
+    <nav class="controls" aria-label="Bouquet controls">
+      <button id="replay" type="button"><span aria-hidden="true">↻</span> Replay animation</button>
+      <button id="bloom-all" class="primary" type="button"><span aria-hidden="true">✿</span> Bloom all flowers</button>
+      <button id="reset" type="button"><span aria-hidden="true">⟲</span> Reset</button>
+    </nav>
+    <p class="footer-note">One month together, a lifetime of blooms <span>✦</span></p>
+  </main>
+</body>
+</html>
